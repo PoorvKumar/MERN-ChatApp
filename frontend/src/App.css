@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+.App
+{
+    min-height: 100vh;
+    display: flex;
+    /* background: linear-gradient(95deg, #21b1d5, #2fa7e3,#a95edf);
+	background-size: 400% 400%;
+	animation: gradient 12s ease infinite; */
+    /* background-color: rgb(69, 180, 223); */
+	background-image: url('../background1.avif');
+	background-size: cover;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
