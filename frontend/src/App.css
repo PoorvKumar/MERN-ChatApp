@@ -4,12 +4,13 @@
 {
     min-height: 100vh;
     display: flex;
-    /* background: linear-gradient(95deg, #21b1d5, #2fa7e3,#a95edf);
+    background: linear-gradient(95deg, #53e2c0, #2fa7e3,#da73ea);
 	background-size: 400% 400%;
-	animation: gradient 12s ease infinite; */
+	animation: gradient 12s ease infinite;
     /* background-color: rgb(69, 180, 223); */
-	background-image: url('../background1.avif');
-	background-size: cover;
+	/* background-image: url('../background1.avif');
+	background-position: center;
+	background-size: cover; */
 }
 
 @keyframes gradient {

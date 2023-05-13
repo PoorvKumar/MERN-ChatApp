@@ -1,10 +1,24 @@
 import { Box, Container, Text,Tabs, TabList, TabPanels, Tab, TabPanel } from '@chakra-ui/react';
-import React from 'react';
+import React, { useEffect } from 'react';
 import SignUp from '../components/authentication/SignUp';
 import Login from '../components/authentication/Login';
 
+import { useHistory } from "react-router-dom";
+
 const Homepage=()=> //react functions names must start with capital letters
 {
+    const history=useHistory();
+
+    useEffect(()=>
+    {
+        const user=JSON.parse(localStorage.getItem("userInfo"));
+
+        if(user)
+        {
+            history.push('/chats');
+        }
+    },[history]);
+
     return (
         <Container maxW='xl' centerContent>
             <Box
