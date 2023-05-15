@@ -20,6 +20,7 @@ connectDB();
 //routes
 const userRoutes=require('./routes/userRoutes');
 const chatRoutes=require('./routes/chatRoutes');
+const messageRoutes=require('./routes/messageRoutes');
 
 app.get('/',(req,res)=>
 {
@@ -29,6 +30,7 @@ app.get('/',(req,res)=>
 //routing
 app.use('/api/user',userRoutes);
 app.use('/api/chat',chatRoutes);
+app.use('/api/message',messageRoutes);
 
 //errro middleware
 app.use(errorMiddlware.notFound);
