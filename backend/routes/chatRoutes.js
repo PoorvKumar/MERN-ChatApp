@@ -11,7 +11,7 @@ router.post('/',authMiddleware.protect,chatController.accessChat);
 router.get('/',authMiddleware.protect,chatController.fetchChats);
 router.post('/group',authMiddleware.protect,chatController.createGroupChat);
 router.put('/rename',authMiddleware.protect,chatController.renameGroup); //put() request as we are updating the group name
-router.put('/addToGroup',authMiddleware.protect,chatController.addToGroup); //put() request
-router.put('/removeFromGroup',authMiddleware.protect,chatController.removeFromGroup); //put() request
+router.put('/groupadd',authMiddleware.protect,chatController.addToGroup); //put() request
+router.put('/groupremove',authMiddleware.protect,chatController.removeFromGroup); //put() request
 
 module.exports=router;

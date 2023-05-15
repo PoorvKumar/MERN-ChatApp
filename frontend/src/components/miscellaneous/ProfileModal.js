@@ -1,4 +1,5 @@
-import { Avatar, Button,  Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Text, useDisclosure } from '@chakra-ui/react';
+import { ViewIcon } from '@chakra-ui/icons';
+import { Avatar, Button,  IconButton,  Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Text, useDisclosure } from '@chakra-ui/react';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
@@ -15,9 +16,8 @@ const ProfileModal=({user,children})=>
 
     return <>
     
-        {/* {children?<span onClick={onOpen}>{children}</span>:<IconButton display="flex" icon={<ViewIcon/>}></IconButton>} */}
-        {children?<span onClick={onOpen}>{children}</span>:<Avatar src={user.imageURL} name={user.name} boxSize="2.1rem"
-         size="2rem" />}
+        {children?<span onClick={onOpen}>{children}</span>:<IconButton display="flex" icon={<ViewIcon/>}></IconButton>}
+        {/* {children?<span onClick={onOpen}>{children}</span>:<Avatar src={user.imageURL} name={user.name} boxSize="2.1rem" size="2rem" />} */}
 
         <Modal isOpen={isOpen} onClose={onClose} size={{base:"xs" ,md: "md"}}>
             <ModalOverlay />
