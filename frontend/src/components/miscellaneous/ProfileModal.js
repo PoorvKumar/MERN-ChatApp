@@ -16,8 +16,8 @@ const ProfileModal=({user,children})=>
 
     return <>
     
-        {children?<span onClick={onOpen}>{children}</span>:<IconButton display="flex" icon={<ViewIcon/>}></IconButton>}
-        {/* {children?<span onClick={onOpen}>{children}</span>:<Avatar src={user.imageURL} name={user.name} boxSize="2.1rem" size="2rem" />} */}
+        {/* {children?<span onClick={onOpen}>{children}</span>:<IconButton display="flex" icon={<ViewIcon/>}></IconButton>} onClick={onOpen}*/}
+        {children?<span onClick={onOpen}>{children}</span>:<Avatar src={user.imageURL} name={user.name} boxSize="2.1rem" size="2rem" onClick={onOpen}/>}
 
         <Modal isOpen={isOpen} onClose={onClose} size={{base:"xs" ,md: "md"}}>
             <ModalOverlay />
