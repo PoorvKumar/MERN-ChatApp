@@ -27,7 +27,7 @@ const ProfileModal=({user,children})=>
             </ModalHeader>
             <ModalCloseButton />
             <ModalBody>
-                <Avatar name={user.name} src={user.imageURL} boxSize="6.8rem" marginX="9.2rem"/>
+                <Avatar name={user.name} src={user.imageURL} boxSize="6.8rem" marginX={{base:"4.9rem" ,md:"9.4rem"}}/>
                 <Text align="center" fontWeight="bold" fontSize="large" marginTop="1.5rem">{user.name}</Text>
                 <Text align="center" fontWeight="medium" fontStyle="italic" marginBottom="1rem">{user.email}</Text>
             </ModalBody>
