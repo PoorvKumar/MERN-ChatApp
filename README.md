@@ -2,7 +2,8 @@
 
 A real-time chat application built with the MERN (MongoDB, Express, React, Node.js) stack, Socket.io, and Chakra UI.
 
-## Demo -> https://youtu.be/Rox2xvtveBo
+## Demo Video
+https://youtu.be/Rox2xvtveBo
 
 ## Features
 
